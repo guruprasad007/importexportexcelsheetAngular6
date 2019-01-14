@@ -15,6 +15,6 @@ export class ImportmenuexcelService {
   addItem(item) {
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://192.168.0.111:7000/api/menuitem/add', item, { headers: headers }).pipe(map(res => res.json()));
+    return this.http.post('http://192.168.43.70:7000/api/menuitem/add', item, { headers: headers }).pipe(map(res => res.json()));
   }
 }
